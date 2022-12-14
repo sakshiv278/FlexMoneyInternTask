@@ -71,7 +71,7 @@ export default class Form extends Component {
         }
         axios.post('https://testformservice1.onrender.com/user', formData,{headers:{"Content-Type" : "application/json"}})
         .then(function (response) {
-          Swal.fire('Payment Successful!',name+' registered','Success')
+          Swal.fire('Payment Successful!',name+' registered','success')
           event.target.reset();
          // this.setState({message:'Success'})
          // console.log(response);
