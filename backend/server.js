@@ -6,7 +6,7 @@ const cors = require('cors')
 const mongoose = require('mongoose');
 const DB = "mongodb+srv://sakshee:saksheev@cluster0.hzacknf.mongodb.net/formdata?retryWrites=true&w=majority"
 const hostname = 'localhost';
-const port = 3001;
+const port = process.env.PORT||3001;
 const corsOptions ={
    origin:'*', 
    credentials:true,
