@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)
+const regularExpression = RegExp(/^^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/)
 
 const validation = ({ error, ...rest }) => {
     let checkValidation = false;
