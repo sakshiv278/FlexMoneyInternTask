@@ -29,3 +29,4 @@ The data is sent to the MongoDB database collection.
 ![data](https://user-images.githubusercontent.com/66488392/207631371-e386dda6-18d8-4bb7-a266-2c71e44a4f33.PNG)
 
 ## Hosting and Deployment
+The app is hosted on Render. Render is a cloud for developers to host and run applications.
