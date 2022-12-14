@@ -31,7 +31,7 @@ The data is sent to the MongoDB database collection.
 ## Hosting and Deployment
 The app is hosted on Render. Render is a cloud for developers to host and run applications.
 
-###Entity- Relationship diagram
+### Entity- Relationship diagram
 The Entity-Relationship model that can be used as reference is given.
 ![erdform](https://user-images.githubusercontent.com/66488392/207634135-b13d0e42-a20d-41b7-9aaf-8249a8c95927.PNG)
 
