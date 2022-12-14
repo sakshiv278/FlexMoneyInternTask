@@ -50,9 +50,11 @@ app.post('/user', function (req, res) {
 
     User1.save(function (err, data) {
         if (err) {
+           res.header('Access-Control-Allow-Origin', '*');
             res.send({ status: 0, result: err });
         }
         else {
+           res.header('Access-Control-Allow-Origin', '*');
             res.send({ status: 1, result: data });
         }
     });
