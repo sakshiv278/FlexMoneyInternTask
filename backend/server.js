@@ -14,6 +14,12 @@ const corsOptions ={
 }
 
 app.use(cors(corsOptions))
+app.use((req,res,next)=>{
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
+})
 //db connection
 
 mongoose.connect(DB, { useNewUrlParser: true });
@@ -50,11 +56,9 @@ app.post('/user', function (req, res) {
 
     User1.save(function (err, data) {
         if (err) {
-           res.header('Access-Control-Allow-Origin', '*');
             res.send({ status: 0, result: err });
         }
         else {
-           res.header('Access-Control-Allow-Origin', '*');
             res.send({ status: 1, result: data });
         }
     });
