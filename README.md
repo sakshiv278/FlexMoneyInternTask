@@ -18,7 +18,7 @@ Various input fields are taken to accept users data and validation is done.
 
 ## Back-end development
 
-On successful validation of persons data the data is sent to the api and Payment is completed usong the mock function named CompletePayment().
+On successful validation of persons data the data is sent to the api and Payment is completed using the mock function named CompletePayment().
 The data is then sent to the MongoDB database using the Express server. MongoDB Atlas is used as a cloud database service.
 On successful user registration a pop-up is shown which is implemented using Sweetalert2.
 
